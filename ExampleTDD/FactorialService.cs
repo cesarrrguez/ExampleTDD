@@ -9,7 +9,13 @@
                 return 1;
             }
 
-            return number * Calculate(number - 1);
+            var result = 1;
+            for (var i = 1; i <= number; i++)
+            {
+                result *= i;
+            }
+
+            return result;
         }
     }
 }
