@@ -4,7 +4,12 @@
     {
         public int Calculate(int number)
         {
-            throw new System.NotImplementedException();
+            if (number == 0)
+            {
+                return 1;
+            }
+
+            return number * Calculate(number - 1);
         }
     }
 }
